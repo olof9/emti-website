@@ -115,7 +115,7 @@ const MACHINE_DOCUMENTS = (window.MACHINE_LIBRARY || []).slice().filter((item, i
   return nameA.localeCompare(nameB);
 });
 
-const PAGE_SIZE = 24;
+const PAGE_SIZE = 5000;
 const nav = document.getElementById('mainNav');
 const navToggle = document.getElementById('navToggle');
 const header = document.getElementById('siteHeader');
