@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EMTI Srl — European Machine Tools Italiana. Used machine tools and industrial equipment." />
+    <title>EMTI Srl — European Machine Tools Italiana</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div id="emtiSite">
+      <header class="site-header scrolled" id="siteHeader">
+        <div class="container header-inner">
+          <a href="#home" class="brand" aria-label="EMTI Srl">
+            <span class="brand-mark">E</span>
+            <span class="brand-text">EMTI <small>SRL</small></span>
+          </a>
+
+          <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <nav class="main-nav" id="mainNav">
+            <a href="#about" data-i18n="nav.about">About</a>
+            <a href="#documents" data-i18n="nav.catalogue">Machines</a>
+            <a href="#services" data-i18n="nav.services">Services</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+            <a href="#documents" class="nav-button" data-i18n="nav.documents">All documents ↗</a>
+          </nav>
+
+          <div class="lang-switch" aria-label="Language">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span>/</span>
+            <button class="lang-btn" data-lang="it">IT</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-image"></div>
+          <div class="hero-overlay"></div>
+          <div class="hero-grid"></div>
+
+          <div class="container hero-inner">
+            <div class="hero-copy">
+              <p class="kicker" data-i18n="hero.kicker">European Machine Tools Italiana</p>
+
+              <h1>EMTI <span>SRL</span></h1>
+
+              <p class="hero-subtitle" data-i18n="hero.subtitle">Used machine tools and industrial solutions.</p>
+
+              <p class="hero-description" data-i18n="hero.description">Experience, expertise and a broad selection of industrial machinery for companies in Italy and worldwide.</p>
+
+              <div class="hero-actions">
+                <a href="#documents" class="btn btn-primary" data-i18n="hero.cta1">Explore machines</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero.cta2">Contact us</a>
+              </div>
+
+              <div class="hero-stats">
+                <div><strong>3000+</strong><span data-i18n="stats.machines">Machine tools</span></div>
+                <div><strong>13000+</strong><span data-i18n="stats.space">m² warehouse</span></div>
+                <div><strong>1972</strong><span data-i18n="stats.founded">Founded</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-scroll"><span data-i18n="hero.scroll">SCROLL</span><i></i></div>
+        </section>
+
+        <section class="about section-light" id="about">
+          <div class="container about-grid">
+            <div class="about-title">
+              <p class="kicker dark" data-i18n="about.kicker">EMTI Srl</p>
+              <h2 data-i18n="about.title">Professionalism <em>and experience.</em></h2>
+              <div class="accent-line"></div>
+            </div>
+
+            <div class="about-copy">
+              <p class="lead" data-i18n="about.lead">EMTI Srl was founded in 1972. Since then, it has grown from a small local company into a business operating internationally.</p>
+              <p data-i18n="about.p1">We have more than 3,000 used machine tools and a warehouse covering more than 13,000 square metres.</p>
+              <p data-i18n="about.p2">We support a wide range of industrial needs, from large production companies to smaller workshops.</p>
+              <a href="#documents" class="text-link"><span data-i18n="about.link">Explore machines</span> →</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="documents section-dark" id="documents">
+          <div class="container">
+            <div class="section-head">
+              <div class="light-head">
+                <p class="kicker" data-i18n="documents.kicker">Machines</p>
+                <h2><span data-i18n="documents.title">Machines</span> <small id="docCount">(0 machines)</small></h2>
+                <p class="section-lead" data-i18n="documents.lead">Browse the machine library. Each item opens the original document in a new tab.</p>
+              </div>
+
+              <label class="search-box">
+                <span>⌕</span>
+                <input id="documentSearch" type="search" autocomplete="off" placeholder="Search machines..." data-i18n-placeholder="documents.search" />
+              </label>
+            </div>
+
+            <div class="document-toolbar">
+              <div class="document-status" id="documentStatus">0 machines · page 1 of 1</div>
+              <div class="document-pagination" id="documentPagination"></div>
+            </div>
+
+            <div class="document-grid" id="documentGrid"></div>
+          </div>
+        </section>
+
+        <section class="services section-light" id="services">
+          <div class="container">
+            <p class="kicker dark" data-i18n="services.kicker">For your industrial project</p>
+            <h2 data-i18n="services.title">A partner <em>for your machines.</em></h2>
+
+            <div class="service-grid">
+              <article>
+                <span>01</span><h3 data-i18n="services.s1.title">Machine library</h3>
+                <p data-i18n="services.s1.text">A broad selection of used machine tools and industrial equipment.</p>
+              </article>
+              <article>
+                <span>02</span><h3 data-i18n="services.s2.title">Experience</h3>
+                <p data-i18n="services.s2.text">Decades of experience in the machine tool sector.</p>
+              </article>
+              <article>
+                <span>03</span><h3 data-i18n="services.s3.title">Logistics</h3>
+                <p data-i18n="services.s3.text">Dedicated facilities and space for machine handling and movement.</p>
+              </article>
+              <article>
+                <span>04</span><h3 data-i18n="services.s4.title">Direct contact</h3>
+                <p data-i18n="services.s4.text">A direct relationship with customers for requests and information.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="container contact-grid">
+            <div>
+              <p class="kicker" data-i18n="contact.kicker">Contact</p>
+              <h2>European Machine Tools <span>Italiana</span></h2>
+            </div>
+
+            <div class="contact-info">
+              <div>
+                <small data-i18n="contact.addressLabel">ADDRESS</small>
+                <span>Via Stiatico, 2/3<br>40050 Argelato (BO), Italy</span>
+              </div>
+              <a href="tel:+39051897991">
+                <small data-i18n="contact.phoneLabel">PHONE</small>
+                <span>+39 051 897991</span>
+              </a>
+              <a href="tel:+393403531465">
+                <small data-i18n="contact.mobileLabel">MOBILE</small>
+                <span>+39 340 3531465</span>
+              </a>
+              <a href="mailto:emti@emti.it">
+                <small data-i18n="contact.emailLabel">EMAIL</small>
+                <span>emti@emti.it</span>
+              </a>
+              <div>
+                <small data-i18n="contact.vatLabel">VAT NUMBER</small>
+                <span>IT00592551204</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div><strong>EMTI SRL</strong></div>
+          <div>© 2025 — European Machine Tools Italiana</div>
+        </div>
+      </footer>
+
+      <div class="cookie-banner" id="cookieBanner">
+        <div>
+          <strong>Cookies</strong>
+          <span>This website uses cookies to remember your language selection and improve navigation.</span>
+        </div>
+        <button class="cookie-close" id="acceptCookies" type="button">Accept</button>
+      </div>
+
+      <div class="doc-dialog" id="docDialog" aria-hidden="true">
+        <div class="dialog-backdrop" data-dialog-close="true"></div>
+        <div class="dialog-panel" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
+          <button class="dialog-close" type="button" aria-label="Close dialog" data-dialog-close="true">×</button>
+          <h3 id="dialogTitle">Machine 001</h3>
+          <p id="dialogText">This button opens the original machine file from the EMTI library.</p>
+          <div class="dialog-actions">
+            <a class="btn btn-primary" id="dialogOpen" href="#" target="_blank" rel="noopener noreferrer">Open machine ↗</a>
+          </div>
+          <p class="dialog-note">The original document opens in a new tab.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./machines.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
